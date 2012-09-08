@@ -1,0 +1,41 @@
+[class^="icon-"],
+[class*=" icon-"] {
+  vertical-align: 0;
+}
+.btn {
+  width: 58px;
+  height: 48px;
+  font-size: 20px;
+  margin: 10px 13px;
+}
+.flat:after {
+  content: '\266D';
+}
+.sharp:after {
+  content: '\266F';
+}
+.title {
+  font-size: 20px;
+}
+.note {
+  position: relative;
+  float: left;
+}
+#staff {
+  background-image: url("../images/staff.png");
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 382px;
+  margin: 0 auto;
+}
+#container {
+  width: 800px;
+  margin: 0 auto;
+}
+#container .label-success,
+#container .label-important {
+  padding: 10px;
+}
+#container .label-important {
+  margin-left: 10px;
+}

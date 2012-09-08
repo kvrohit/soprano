@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  #staff
+
+  #container
+    .well
+      button.btn.btn-primary#c        C
+      button.btn.btn-primary.sharp#cs C
+      button.btn.btn-inverse.flat#dft D
+      button.btn.btn-inverse#d        D
+      button.btn.btn-inverse.sharp#ds D
+      button.btn.btn-primary.flat#eft E
+      button.btn.btn-primary#e        E
+      button.btn.btn-inverse#f        F
+      button.btn.btn-inverse.sharp#fs F
+      button.btn.btn-primary.flat#gft G
+      button.btn.btn-primary#g        G
+      button.btn.btn-primary.sharp#gs G
+      button.btn.btn-inverse.flat#bft B
+      button.btn.btn-inverse#b        B
+      button.btn.btn-primary.flat#aft A
+      button.btn.btn-primary#a        A
+      button.btn.btn-primary.sharp#as A
+      button.btn.btn-danger#refresh
+        i.icon-refresh.icon-white
+
+    .well
+      .row
+        .span-6.title Your Score:
+        .span-6.pull-right
+          span.label.label-success#correct Correct: 0
+          span.label.label-important#incorrect Incorrect: 0
+
+
+  script(src='http://code.jquery.com/jquery-latest.min.js')
+  script(src='javascripts/notes.js')
+  script(src='javascripts/soprano.js')
+  script
+    $(function() {
+      Soprano.init();
+    });
