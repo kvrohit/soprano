@@ -27,6 +27,11 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+app.configure('production', function(){
+  app.set('ga', true);
+  app.use(express.errorHandler());
+});
+
 app.get('/', routes.index);
 
 http.createServer(app).listen(app.get('port'), function(){

@@ -47,5 +47,5 @@ var notes = [
   { note: 'd', pos: { top: 36, left: 704 } },
   { note: 'ds', pos: { top: 36, left: 696 } },
   { note: 'eft', pos: { top: 20, left: 696 } },
-  { note: 'e', pos: { top: 20, left: 704 } },
+  { note: 'e', pos: { top: 20, left: 704 } }
 ];

@@ -32,6 +32,9 @@ block content
           span.label.label-success#correct Correct: 0
           span.label.label-important#incorrect Incorrect: 0
 
+    footer Soprano app by Rohit K Viswanath, Fork me on&nbsp;
+      a(href='https://github.com/kvrohit/soprano') github
+
 
   script(src='http://code.jquery.com/jquery-latest.min.js')
   script(src='javascripts/notes.js')
@@ -40,3 +43,15 @@ block content
     $(function() {
       Soprano.init();
     });
+
+  - if (settings.ga === true)
+  script
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34688924-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
